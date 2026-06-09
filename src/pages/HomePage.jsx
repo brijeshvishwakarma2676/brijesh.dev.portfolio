@@ -7,7 +7,6 @@ import WhyChooseMe from '../components/sections/WhyChooseMe';
 import Testimonials from '../components/sections/Testimonials';
 import { projectsData } from '../data/content';
 import { FadeIn } from '../components/ui/SectionHeading';
-import { GithubIcon } from '../components/ui/BrandIcons';
 import { ExternalLink } from 'lucide-react';
 
 export default function HomePage() {
@@ -79,26 +78,19 @@ export default function HomePage() {
                     <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed flex-1 mb-4">
                       {project.description}
                     </p>
-                    <div className="flex items-center gap-3">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                        aria-label="GitHub"
-                      >
-                        <GithubIcon size={15} />
-                      </a>
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                        aria-label="Live demo"
-                      >
-                        <ExternalLink size={15} />
-                      </a>
-                    </div>
+                    {project.liveUrl && project.liveUrl !== '#' && (
+                      <div className="flex items-center gap-3">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                          aria-label="Live demo"
+                        >
+                          <ExternalLink size={15} />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </FadeIn>

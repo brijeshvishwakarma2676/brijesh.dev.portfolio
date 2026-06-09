@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight } from 'lucide-react';
-import { GithubIcon } from '../ui/BrandIcons';
 import { projectsData } from '../../data/content';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
 
@@ -82,26 +81,19 @@ export default function Projects() {
                     <span className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide">
                       {project.category}
                     </span>
-                    <div className="flex items-center gap-3">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                        aria-label="GitHub repository"
-                      >
-                        <GithubIcon size={16} />
-                      </a>
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                        aria-label="Live demo"
-                      >
-                        <ExternalLink size={16} />
-                      </a>
-                    </div>
+                    {project.liveUrl && project.liveUrl !== '#' && (
+                      <div className="flex items-center gap-3">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                          aria-label="Live demo"
+                        >
+                          <ExternalLink size={16} />
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
