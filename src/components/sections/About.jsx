@@ -4,23 +4,23 @@ import { SectionHeading, FadeIn } from '../ui/SectionHeading';
 const values = [
   {
     icon: Code2,
-    title: 'Clean Code',
-    description: 'I write code that is readable, maintainable, and well-documented. The best code is code your team can work with confidently.',
+    title: 'Production-Grade Architecture',
+    description: 'I build software using robust design patterns, scalable data schemas, and strict validation. No temporary shortcuts or casual templates.',
   },
   {
     icon: Users,
-    title: 'Clear Communication',
-    description: 'Regular updates, honest timelines, and no surprises. I treat every project as a partnership, not a transaction.',
+    title: 'Systematic Planning',
+    description: 'I document architectural decisions and maintain clear API specs. Every sprint has defined milestones and deliverables.',
   },
   {
     icon: Zap,
-    title: 'Performance First',
-    description: 'Every decision considers load time, responsiveness, and user experience. Fast software is good software.',
+    title: 'Performance Audits',
+    description: 'Applications are optimized for low latency, optimized caching, and core web vitals. Speed is engineered, not accidental.',
   },
   {
     icon: Shield,
-    title: 'Reliability',
-    description: 'I deliver what I commit to, on time. If something changes, I communicate early and adapt the plan together.',
+    title: 'Enterprise Security',
+    description: 'All communication pipelines, database queries, and authorization headers are designed to protect user data and business integrity.',
   },
 ];
 
@@ -38,25 +38,23 @@ export default function About() {
           <FadeIn className="lg:col-span-3">
             <div className="space-y-5 text-gray-600 dark:text-gray-400 leading-relaxed">
               <p>
-                I&apos;m a software engineer focused on building web applications and digital products 
-                that work well for real users and real businesses. My background is primarily in 
-                frontend development with React, but I work across the stack when projects require it.
+                I&apos;m a professional software engineer focused on engineering web applications and digital systems 
+                that deliver commercial value and absolute reliability. While my primary expertise is in 
+                modern React and frontend systems, I architect complete stack solutions with rigorous design standards.
               </p>
               <p>
-                Over the past several years, I&apos;ve worked with startups, small businesses, and 
-                agencies on projects ranging from marketing websites to complex internal tools. 
-                What I enjoy most is taking a vague business requirement and turning it into 
-                software that people actually find useful.
+                Unlike casual code assembly or trend-following shortcuts, my methodology centers on 
+                sound engineering principles. I specialize in turning complex, ambiguous business problems into 
+                highly structured, performant, and well-tested software applications.
               </p>
               <p>
-                I care about the details — consistent spacing, fast load times, accessible interfaces, 
-                and clean codebases. I also care about the bigger picture — does this actually solve 
-                the problem? Is the architecture going to hold up in six months?
+                I prioritize the details that define professional engineering: test-driven state flows, secure 
+                communication protocols, database optimization, and robust component architecture. I design systems 
+                built for high scalability and long-term maintenance, ensuring your code remains stable six months or six years down the road.
               </p>
               <p>
-                I prefer working with clients who value quality over speed, and who see their 
-                software as a long-term investment rather than a one-time expense. If that sounds 
-                like you, I&apos;d enjoy the conversation.
+                I partner with businesses and founders who reject short-sighted, unstable builds in favor of 
+                durable software assets. If you value architectural rigor and professional execution, let&apos;s build.
               </p>
             </div>
           </FadeIn>

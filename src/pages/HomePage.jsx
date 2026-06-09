@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight } from 'lucide-react';
 import Hero from '../components/sections/Hero';
 import Expertise from '../components/sections/Expertise';
+import WhyChooseMe from '../components/sections/WhyChooseMe';
 import Testimonials from '../components/sections/Testimonials';
 import { projectsData } from '../data/content';
 import { FadeIn } from '../components/ui/SectionHeading';
@@ -21,6 +22,7 @@ export default function HomePage() {
 
       <Hero />
       <Expertise />
+      <WhyChooseMe />
 
       {/* Featured Projects Preview */}
       <section className="py-24">

@@ -46,15 +46,13 @@ export default function Hero() {
           Built for Growth
         </motion.h1>
 
-        {/* Subheadline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-6 text-lg sm:text-xl text-gray-500 dark:text-gray-400 max-w-2xl leading-relaxed"
         >
-          I help businesses build modern websites, web applications, automation systems, 
-          and scalable digital products using proven technologies.
+          I design and engineer production-grade websites and web applications. No casual "vibe coding" shortcuts, and no bloated agency overhead—just robust, structured code tailored to grow your business affordably.
         </motion.p>
 
         {/* CTAs */}
