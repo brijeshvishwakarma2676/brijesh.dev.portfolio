@@ -119,6 +119,23 @@ export const projectsData = [
     featured: false,
   },
   {
+    id: 14,
+    slug: "premium-dining-restaurant",
+    title: "Premium Dining Restaurant",
+    category: "Premium Multipage",
+    description:
+      "A luxury, visual-first culinary website featuring interactive menus, chef profiles, and a seamless reservation booking interface.",
+    challenge:
+      "Creating an immersive multi-page menu browsing experience and a responsive scheduling flow for table bookings.",
+    solution:
+      "Used high-resolution lazy-loaded imagery, category-based list filters, and clean client-side validation for booking requests.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+    liveUrl: "https://premium-dining-restaurant.vercel.app/",
+    githubUrl: "#",
+    color: "#B91C1C",
+    featured: true,
+  },
+  {
     id: 1,
     slug: "shopcanvas-ecommerce",
     title: "ShopCanvas Multi-Theme E-Commerce",
@@ -156,7 +173,7 @@ export const projectsData = [
     id: 3,
     slug: "harmony-studio",
     title: "Harmony Studio",
-    category: "Websites",
+    category: "Premium Multipage",
     description:
       "A premium, highly aesthetic portfolio website for a creative design studio, prioritizing fluid layout transitions and high-end typography.",
     challenge:

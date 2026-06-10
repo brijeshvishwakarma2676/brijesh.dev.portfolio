@@ -4,7 +4,7 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 import { projectsData } from '../../data/content';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
 
-const categories = ['All', 'SaaS', 'React Apps', 'Websites', 'Quick Demo'];
+const categories = ['All', 'Premium Multipage', 'SaaS', 'React Apps', 'Websites', 'Quick Demo'];
 
 export default function Projects() {
   const [active, setActive] = useState('All');
