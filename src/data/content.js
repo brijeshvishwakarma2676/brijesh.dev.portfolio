@@ -136,6 +136,23 @@ export const projectsData = [
     featured: true,
   },
   {
+    id: 15,
+    slug: "premium-fitness-portfolio",
+    title: "Premium Fitness Portfolio",
+    category: "Premium Multipage",
+    description:
+      "A high-end, visual-first fitness portfolio featuring interactive schedules, training options, and an immersive dark-mode aesthetic.",
+    challenge:
+      "Creating an engaging and energetic UI while maintaining fast load times and smooth scroll animations.",
+    solution:
+      "Utilized fluid layout transitions, optimized media components, and clean styling to deliver a premium user experience.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+    liveUrl: "https://premium-fitness-portfolio.vercel.app/",
+    githubUrl: "#",
+    color: "#10B981",
+    featured: true,
+  },
+  {
     id: 1,
     slug: "shopcanvas-ecommerce",
     title: "ShopCanvas Multi-Theme E-Commerce",
