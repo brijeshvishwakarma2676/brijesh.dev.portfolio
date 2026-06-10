@@ -153,6 +153,23 @@ export const projectsData = [
     featured: true,
   },
   {
+    id: 16,
+    slug: "premium-healthcare-portfolio",
+    title: "Premium Healthcare Portfolio",
+    category: "Premium Multipage",
+    description:
+      "A comprehensive, highly-accessible healthcare portal featuring doctor profiles, patient services, and an integrated booking system.",
+    challenge:
+      "Structuring dense medical information while maintaining an inviting, clean, and accessible user experience across all devices.",
+    solution:
+      "Implemented a soft, professional color palette with structured service grids, clear typography, and a simplified scheduling flow.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+    liveUrl: "https://premium-healthcare-portfolio.vercel.app/",
+    githubUrl: "#",
+    color: "#0EA5E9",
+    featured: true,
+  },
+  {
     id: 1,
     slug: "shopcanvas-ecommerce",
     title: "ShopCanvas Multi-Theme E-Commerce",
