@@ -56,7 +56,18 @@ export default function Navbar({ isDark, toggleDark }) {
               end={link.href === '/'}
               className={linkClass}
             >
-              {link.label}
+              {({ isActive }) => (
+                <span className="relative">
+                  {link.label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-active-underline"
+                      className="absolute -bottom-1.5 left-0 right-0 h-0.5 rounded-full bg-blue-600 dark:bg-blue-400"
+                      transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                    />
+                  )}
+                </span>
+              )}
             </NavLink>
           ))}
 

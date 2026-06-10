@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Send, Mail, Phone, Calendar, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Send, Mail, Phone, CheckCircle2, AlertCircle } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from '../ui/BrandIcons';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
 
@@ -50,8 +50,8 @@ export default function Contact() {
                     {...register('name', { required: 'Name is required' })}
                     className={`w-full px-4 py-2.5 text-sm bg-white dark:bg-gray-900 border rounded-lg outline-none transition-colors ${
                       errors.name
-                        ? 'border-red-300 dark:border-red-700 focus:border-red-500'
-                        : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500'
+                        ? 'border-red-300 dark:border-red-700 focus:border-red-500 focus:ring-2 focus:ring-red-500/15'
+                        : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-2 focus:ring-blue-500/15'
                     } text-gray-900 dark:text-white placeholder:text-gray-400`}
                     placeholder="Your name"
                   />
@@ -76,8 +76,8 @@ export default function Contact() {
                     })}
                     className={`w-full px-4 py-2.5 text-sm bg-white dark:bg-gray-900 border rounded-lg outline-none transition-colors ${
                       errors.email
-                        ? 'border-red-300 dark:border-red-700 focus:border-red-500'
-                        : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500'
+                        ? 'border-red-300 dark:border-red-700 focus:border-red-500 focus:ring-2 focus:ring-red-500/15'
+                        : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-2 focus:ring-blue-500/15'
                     } text-gray-900 dark:text-white placeholder:text-gray-400`}
                     placeholder="you@company.com"
                   />
@@ -97,8 +97,8 @@ export default function Contact() {
                   {...register('subject', { required: 'Subject is required' })}
                   className={`w-full px-4 py-2.5 text-sm bg-white dark:bg-gray-900 border rounded-lg outline-none transition-colors ${
                     errors.subject
-                      ? 'border-red-300 dark:border-red-700 focus:border-red-500'
-                      : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500'
+                      ? 'border-red-300 dark:border-red-700 focus:border-red-500 focus:ring-2 focus:ring-red-500/15'
+                      : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-2 focus:ring-blue-500/15'
                   } text-gray-900 dark:text-white placeholder:text-gray-400`}
                   placeholder="Project inquiry"
                 />
@@ -117,8 +117,8 @@ export default function Contact() {
                   {...register('message', { required: 'Message is required' })}
                   className={`w-full px-4 py-2.5 text-sm bg-white dark:bg-gray-900 border rounded-lg outline-none transition-colors resize-none ${
                     errors.message
-                      ? 'border-red-300 dark:border-red-700 focus:border-red-500'
-                      : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500'
+                      ? 'border-red-300 dark:border-red-700 focus:border-red-500 focus:ring-2 focus:ring-red-500/15'
+                      : 'border-gray-200 dark:border-gray-800 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-2 focus:ring-blue-500/15'
                   } text-gray-900 dark:text-white placeholder:text-gray-400`}
                   placeholder="Tell me about your project, timeline, and budget..."
                 />
@@ -130,10 +130,10 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
-                <Send size={16} />
+                <Send size={16} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
 
               {/* Status messages */}

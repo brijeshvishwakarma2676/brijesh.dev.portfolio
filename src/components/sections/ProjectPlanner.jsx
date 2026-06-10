@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { WhatsappIcon } from '../ui/BrandIcons';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
 import { Check, Settings, Sparkles, Zap } from 'lucide-react';

@@ -13,6 +13,8 @@ export default function Hero() {
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='%23000' stroke-width='0.5'/%3E%3C/svg%3E")`,
           }}
         />
+        {/* Ambient brand glow */}
+        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[640px] h-[480px] rounded-full bg-blue-500/10 dark:bg-blue-500/15 blur-[120px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white dark:to-gray-950" />
       </div>
 
@@ -42,7 +44,9 @@ export default function Hero() {
           className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 dark:text-white tracking-tight leading-[1.1] max-w-3xl"
         >
           Custom Websites &amp;{' '}
-          <span className="text-gray-400 dark:text-gray-500">Business Solutions</span>{' '}
+          <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-600 dark:from-blue-400 dark:via-indigo-400 dark:to-blue-400 bg-clip-text text-transparent">
+            Business Solutions
+          </span>{' '}
           Built for Growth
         </motion.h1>
 
@@ -64,19 +68,19 @@ export default function Hero() {
         >
           <Link
             to="/projects"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 hover:shadow-lg hover:shadow-gray-900/20 dark:hover:shadow-white/10 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
           >
             View Projects
-            <ArrowRight size={16} />
+            <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>
           <a
             href="https://wa.me/919699642659?text=Hello%20Brijesh,%20I'd%20like%20to%20discuss%20a%20project!"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
+            className="group inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 hover:border-gray-400 dark:hover:border-gray-600 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
           >
             Schedule a Consultation
-            <ChevronRight size={16} />
+            <ChevronRight size={16} className="transition-transform duration-200 group-hover:translate-x-0.5" />
           </a>
         </motion.div>
 

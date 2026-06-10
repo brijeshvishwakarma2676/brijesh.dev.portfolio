@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { ShieldAlert, IndianRupee, Sparkles } from 'lucide-react';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
 

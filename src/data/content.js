@@ -53,6 +53,7 @@ export const projectsData = [
   {
     id: 10,
     slug: "eg-earth-fitness-gym",
+    keywords: ["gym", "fitness", "workout", "yoga", "training", "exercise", "wellness", "health", "sports", "trainer"],
     title: "EG Earth Fitness Gym Portal",
     category: "Quick Demo",
     description:
@@ -70,6 +71,7 @@ export const projectsData = [
   {
     id: 11,
     slug: "tanisi-impex-demo",
+    keywords: ["b2b", "wholesale", "marketplace", "export", "import", "catalog", "trading", "ecommerce", "business"],
     title: "Tanisi Impex (Quick Demo)",
     category: "Quick Demo",
     description:
@@ -87,6 +89,7 @@ export const projectsData = [
   {
     id: 12,
     slug: "healthcare-landing-page",
+    keywords: ["healthcare", "hospital", "clinic", "doctor", "medical", "appointment", "booking", "patient", "health", "wellness"],
     title: "Healthcare Services Portal",
     category: "Quick Demo",
     description:
@@ -104,6 +107,7 @@ export const projectsData = [
   {
     id: 13,
     slug: "generic-email-service",
+    keywords: ["email", "smtp", "newsletter", "notification", "automation", "mailing", "alerts", "transactional"],
     title: "PointNest Automated Email System",
     category: "SaaS",
     description:
@@ -121,6 +125,7 @@ export const projectsData = [
   {
     id: 14,
     slug: "premium-dining-restaurant",
+    keywords: ["restaurant", "dining", "food", "cafe", "menu", "reservation", "booking", "culinary", "hotel", "chef"],
     title: "Premium Dining Restaurant",
     category: "Premium Multipage",
     description:
@@ -138,6 +143,7 @@ export const projectsData = [
   {
     id: 15,
     slug: "premium-fitness-portfolio",
+    keywords: ["gym", "fitness", "workout", "yoga", "training", "exercise", "wellness", "health", "sports", "trainer"],
     title: "Premium Fitness Portfolio",
     category: "Premium Multipage",
     description:
@@ -155,6 +161,7 @@ export const projectsData = [
   {
     id: 16,
     slug: "premium-healthcare-portfolio",
+    keywords: ["healthcare", "hospital", "clinic", "doctor", "medical", "appointment", "booking", "patient", "health"],
     title: "Premium Healthcare Portfolio",
     category: "Premium Multipage",
     description:
@@ -172,6 +179,7 @@ export const projectsData = [
   {
     id: 1,
     slug: "shopcanvas-ecommerce",
+    keywords: ["ecommerce", "shop", "store", "cart", "checkout", "retail", "shopping", "online store", "themes"],
     title: "ShopCanvas Multi-Theme E-Commerce",
     category: "React Apps",
     description:
@@ -189,6 +197,7 @@ export const projectsData = [
   {
     id: 2,
     slug: "pointnest-saas",
+    keywords: ["saas", "loyalty", "rewards", "points", "crm", "dashboard", "platform", "subscription"],
     title: "PointNest SaaS Platform",
     category: "SaaS",
     description:
@@ -206,10 +215,11 @@ export const projectsData = [
   {
     id: 3,
     slug: "harmony-studio",
+    keywords: ["zumba", "yoga", "dance", "fitness", "wellness", "studio", "classes", "workout", "gym", "health", "meditation", "mumbai"],
     title: "Harmony Studio",
     category: "Premium Multipage",
     description:
-      "A premium, highly aesthetic portfolio website for a creative design studio, prioritizing fluid layout transitions and high-end typography.",
+      "A premium, highly aesthetic website for a Mumbai-based dance, yoga & Zumba studio, prioritizing fluid layout transitions and high-end typography.",
     challenge:
       "Achieving complex interactive scroll behaviors and canvas animations while keeping page speed under 1.5 seconds.",
     solution:
@@ -223,6 +233,7 @@ export const projectsData = [
   {
     id: 4,
     slug: "tanisi-impex",
+    keywords: ["b2b", "wholesale", "export", "import", "marketplace", "catalog", "quotation", "trading", "business"],
     title: "Tanisi Impex B2B Portal",
     category: "Websites",
     description:
@@ -240,10 +251,11 @@ export const projectsData = [
   {
     id: 5,
     slug: "artsify-gallery",
+    keywords: ["art", "portrait", "custom portraits", "hand-drawn", "sketch", "digital art", "gallery", "artist", "paintings", "gifts", "commission"],
     title: "Artsify Digital Gallery",
     category: "Websites",
     description:
-      "An interactive portfolio showcase and digital gallery showcasing creative designs and client artworks.",
+      "An interactive gallery for a custom portrait art business, showcasing hand-drawn and digital artworks with commission requests.",
     challenge:
       "Rendering high-resolution images smoothly across various devices and network speeds.",
     solution:
@@ -257,10 +269,11 @@ export const projectsData = [
   {
     id: 6,
     slug: "sr-motors-portfolio",
+    keywords: ["electric vehicle", "ev", "electric bike", "scooter", "motorcycle", "oben", "dealership", "automotive", "showroom", "two-wheeler", "booking", "test ride"],
     title: "SR Motors Oben Portfolio",
     category: "Websites",
     description:
-      "A premium automotive portfolio detailing modern vehicle specs, interactive color select panels, and booking requests.",
+      "A premium portfolio for an electric vehicle dealership, detailing e-bike specs, interactive color select panels, and test-ride booking requests.",
     challenge:
       "Providing users an intuitive booking process with real-time feedback and clear styling options.",
     solution:
@@ -274,6 +287,7 @@ export const projectsData = [
   {
     id: 7,
     slug: "smart-file-solutions",
+    keywords: ["compliance", "documentation", "filing", "legal", "tax", "consulting", "business services", "gst"],
     title: "Smart File Solutions",
     category: "Websites",
     description:
@@ -291,6 +305,7 @@ export const projectsData = [
   {
     id: 8,
     slug: "veeru-social-welfare",
+    keywords: ["ngo", "charity", "nonprofit", "donation", "volunteer", "social welfare", "community", "foundation"],
     title: "Veeru Social Welfare NGO",
     category: "Websites",
     description:
@@ -308,6 +323,7 @@ export const projectsData = [
   {
     id: 9,
     slug: "baba-properties",
+    keywords: ["real estate", "property", "realty", "listings", "housing", "apartments", "broker", "flats", "land"],
     title: "Baba Properties Real Estate",
     category: "Websites",
     description:

@@ -6,7 +6,8 @@ export default function PageHeader({ label, title, description }) {
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
           {label && (
-            <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-3 tracking-wide uppercase">
+            <p className="inline-flex items-center gap-2.5 text-sm font-medium text-blue-600 dark:text-blue-400 mb-3 tracking-wide uppercase">
+              <span className="h-px w-6 bg-blue-600 dark:bg-blue-400" aria-hidden="true" />
               {label}
             </p>
           )}
