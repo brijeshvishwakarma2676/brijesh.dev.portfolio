@@ -177,6 +177,24 @@ export const projectsData = [
     featured: true,
   },
   {
+    id: 17,
+    slug: "premium-course-portal",
+    keywords: ["course", "lms", "learning", "education", "academy", "video", "dashboard", "student", "certificate"],
+    title: "SkillForge Academy LMS",
+    category: "Premium Multipage",
+    description:
+      "A high-value online learning platform providing structured paths, interactive video players, and personalized dashboards for career-driven professionals.",
+    challenge:
+      "Implementing complex state management for progress tracking and engineering an interactive video lesson dashboard while maintaining rapid page loads.",
+    solution:
+      "Utilized Zustand for lightweight state handling, lazy-loaded React components, and a custom CSS design system for a fluid, professional aesthetic.",
+    techStack: ["React", "Zustand", "Vite", "CSS"],
+    liveUrl: "https://premium-course-portal.vercel.app/",
+    githubUrl: "#",
+    color: "#4F46E5",
+    featured: true,
+  },
+  {
     id: 1,
     slug: "shopcanvas-ecommerce",
     keywords: ["ecommerce", "shop", "store", "cart", "checkout", "retail", "shopping", "online store", "themes"],
