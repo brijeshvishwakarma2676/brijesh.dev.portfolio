@@ -156,6 +156,7 @@ export const projectsData = [
     liveUrl: "https://premium-fitness-portfolio.vercel.app/",
     githubUrl: "#",
     color: "#10B981",
+    image: "/projects/premium-fitness.png",
     featured: true,
   },
   {

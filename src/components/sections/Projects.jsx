@@ -162,30 +162,46 @@ export default function Projects() {
                 {/* Browser mockup header */}
                 <div className="bg-gray-50 dark:bg-gray-800/50 px-4 py-3 flex items-center gap-2 border-b border-gray-200 dark:border-gray-800">
                   <div className="flex gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
                   </div>
-                  <div className="flex-1 h-5 bg-gray-200 dark:bg-gray-700 rounded mx-8" />
+                  <div className="flex-1 h-5 bg-gray-200 dark:bg-gray-700/60 rounded mx-8 flex items-center px-3 overflow-hidden">
+                    {project.liveUrl && project.liveUrl !== '#' && (
+                      <span className="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate">
+                        {project.liveUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 {/* Colored content area */}
                 <div
                   className="h-44 flex items-center justify-center relative overflow-hidden"
-                  style={{ backgroundColor: project.color + '08' }}
+                  style={{ backgroundColor: project.image ? 'transparent' : project.color + '08' }}
                 >
-                  <div
-                    className="absolute inset-0 opacity-[0.04]"
-                    style={{
-                      backgroundImage: `radial-gradient(circle at 20% 50%, ${project.color}40 0%, transparent 50%), radial-gradient(circle at 80% 50%, ${project.color}20 0%, transparent 50%)`,
-                    }}
-                  />
-                  <span
-                    className="text-5xl font-bold opacity-10 transition-transform duration-500 group-hover:scale-110"
-                    style={{ color: project.color }}
-                  >
-                    {project.title.split(' ')[0]}
-                  </span>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} thumbnail`}
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <>
+                      <div
+                        className="absolute inset-0 opacity-[0.04]"
+                        style={{
+                          backgroundImage: `radial-gradient(circle at 20% 50%, ${project.color}40 0%, transparent 50%), radial-gradient(circle at 80% 50%, ${project.color}20 0%, transparent 50%)`,
+                        }}
+                      />
+                      <span
+                        className="text-5xl font-bold opacity-10 transition-transform duration-500 group-hover:scale-110"
+                        style={{ color: project.color }}
+                      >
+                        {project.title.split(' ')[0]}
+                      </span>
+                    </>
+                  )}
                 </div>
 
                 {/* Content */}
