@@ -66,6 +66,7 @@ export const projectsData = [
     liveUrl: "https://eg-earth-fitness-gym-portfolio.vercel.app/",
     githubUrl: "#",
     color: "#16A34A",
+    image: "/projects/eg-earth-fitness-gym.png",
     featured: false,
   },
   {
@@ -84,6 +85,7 @@ export const projectsData = [
     liveUrl: "https://tanisiimpex.vercel.app/",
     githubUrl: "#",
     color: "#059669",
+    image: "/projects/tanisi-impex-demo.png",
     featured: false,
   },
   {
@@ -102,6 +104,7 @@ export const projectsData = [
     liveUrl: "https://healthcare-landing-page-directions.vercel.app/",
     githubUrl: "#",
     color: "#0284C7",
+    image: "/projects/healthcare-landing-page.png",
     featured: false,
   },
   {
@@ -120,6 +123,7 @@ export const projectsData = [
     liveUrl: "#",
     githubUrl: "#",
     color: "#D97706",
+    image: "/projects/generic-email-service.png",
     featured: false,
   },
   {
@@ -138,6 +142,7 @@ export const projectsData = [
     liveUrl: "https://premium-dining-restaurant.vercel.app/",
     githubUrl: "#",
     color: "#B91C1C",
+    image: "/projects/premium-dining-restaurant.png",
     featured: true,
   },
   {
@@ -175,6 +180,7 @@ export const projectsData = [
     liveUrl: "https://premium-healthcare-portfolio.vercel.app/",
     githubUrl: "#",
     color: "#0EA5E9",
+    image: "/projects/premium-healthcare.png",
     featured: true,
   },
   {
@@ -193,6 +199,26 @@ export const projectsData = [
     liveUrl: "https://premium-course-portal.vercel.app/",
     githubUrl: "#",
     color: "#4F46E5",
+    image: "/projects/premium-course-portal.png",
+    featured: true,
+  },
+  {
+    id: 18,
+    slug: "elite-hair-and-spa",
+    keywords: ["salon", "spa", "beauty", "hair", "haircut", "massage", "wellness", "booking", "booking system", "stylist"],
+    title: "Elite Hair & Spa Landing Page",
+    category: "Premium Multipage",
+    description:
+      "A luxurious, modern landing page for a premium salon and spa, featuring interactive service menus, immersive image sliders, and smooth scroll animations.",
+    challenge:
+      "Creating an elegant, highly-visual experience that showcases high-quality imagery without compromising page load speeds or smooth scrolling.",
+    solution:
+      "Implemented Lenis for fluid scrolling, React Compare Slider for interactive before/after transformations, and optimized Vite build processes.",
+    techStack: ["React 19", "Tailwind CSS v4", "Framer Motion", "Lenis", "Vite"],
+    liveUrl: "https://elite-hair-and-spa.vercel.app/",
+    githubUrl: "#",
+    color: "#E11D48",
+    image: "/projects/elite-hair-and-spa.png",
     featured: true,
   },
   {
@@ -211,6 +237,7 @@ export const projectsData = [
     liveUrl: "https://shopcanvas-multi-theme-ecommerce.vercel.app/",
     githubUrl: "#",
     color: "#2563EB",
+    image: "/projects/shopcanvas-ecommerce.png",
     featured: false,
   },
   {
@@ -229,6 +256,7 @@ export const projectsData = [
     liveUrl: "https://point-nest.vercel.app/",
     githubUrl: "#",
     color: "#7C3AED",
+    image: "/projects/pointnest-saas.png",
     featured: false,
   },
   {
@@ -247,6 +275,7 @@ export const projectsData = [
     liveUrl: "https://www.harmonystudio.co.in/",
     githubUrl: "#",
     color: "#0D9488",
+    image: "/projects/harmony-studio.png",
     featured: true,
   },
   {
@@ -265,6 +294,7 @@ export const projectsData = [
     liveUrl: "https://tanisiimpex.com/",
     githubUrl: "#",
     color: "#059669",
+    image: "/projects/tanisi-impex.png",
     featured: true,
   },
   {
@@ -283,6 +313,7 @@ export const projectsData = [
     liveUrl: "https://artsify.in/",
     githubUrl: "#",
     color: "#DB2777",
+    image: "/projects/artsify-gallery.png",
     featured: false,
   },
   {
@@ -301,6 +332,7 @@ export const projectsData = [
     liveUrl: "https://sr-motors-oben-portfolio.vercel.app/",
     githubUrl: "#",
     color: "#DC2626",
+    image: "/projects/sr-motors-portfolio.png",
     featured: false,
   },
   {
@@ -319,6 +351,7 @@ export const projectsData = [
     liveUrl: "https://smartfilesolutions.in/",
     githubUrl: "#",
     color: "#0284C7",
+    image: "/projects/smart-file-solutions.png",
     featured: false,
   },
   {
@@ -337,6 +370,7 @@ export const projectsData = [
     liveUrl: "https://veeru-social-welfare-website.vercel.app/",
     githubUrl: "#",
     color: "#EA580C",
+    image: "/projects/veeru-social-welfare.png",
     featured: false,
   },
   {
@@ -355,6 +389,7 @@ export const projectsData = [
     liveUrl: "https://babaproperties.vercel.app/",
     githubUrl: "#",
     color: "#4F46E5",
+    image: "/projects/baba-properties.png",
     featured: true,
   },
 ];
