@@ -222,6 +222,25 @@ export const projectsData = [
     featured: true,
   },
   {
+    id: 19,
+    slug: "royal-wedding-studios",
+    keywords: ["wedding", "photography", "cinematography", "gallery", "portfolio", "studio", "luxury", "video", "photo", "events"],
+    title: "Royal Wedding Studios",
+    category: "Premium Multipage",
+    description:
+      "A luxury, editorial-style wedding photography & cinematography web app featuring interactive photo galleries, cinematic 4K video modals, responsive narrative stories, and a seamless inquiry workflow.",
+    challenge:
+      "Engineering high-performance image grids and video modals that load instantly without compromising 4K resolution quality or smooth scrolling.",
+    solution:
+      "Implemented custom masonry layouts, progressive image loading, and optimized Framer Motion components to deliver an uninterrupted editorial experience.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+    liveUrl: "https://royal-wedding-studios.vercel.app/",
+    githubUrl: "#",
+    color: "#D4AF37",
+    image: "/projects/royal-wedding-studios.png",
+    featured: true,
+  },
+  {
     id: 1,
     slug: "shopcanvas-ecommerce",
     keywords: ["ecommerce", "shop", "store", "cart", "checkout", "retail", "shopping", "online store", "themes"],
