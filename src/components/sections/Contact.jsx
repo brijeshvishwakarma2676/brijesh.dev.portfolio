@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 import { Send, Mail, Phone, CheckCircle2, AlertCircle } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from '../ui/BrandIcons';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export default function Contact() {
   const [status, setStatus] = useState(null); // 'success' | 'error' | null
@@ -14,14 +19,32 @@ export default function Contact() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log('Form data:', data);
+      const initials = data.name
+        .trim()
+        .split(/\s+/)
+        .map((part) => part[0])
+        .slice(0, 2)
+        .join('')
+        .toUpperCase();
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: data.name,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+          initials,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      );
       setStatus('success');
       reset();
       setTimeout(() => setStatus(null), 5000);
-    } catch {
+    } catch (err) {
+      console.error('EmailJS send failed:', err);
       setStatus('error');
     }
   };
@@ -181,7 +204,7 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href="https://github.com"
+                    href="https://github.com/brijeshvishwakarma2676"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
