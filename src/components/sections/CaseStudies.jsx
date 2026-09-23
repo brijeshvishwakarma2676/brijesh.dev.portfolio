@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { projectsData } from '../../data/content';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
+import ProjectCardImage from '../ui/ProjectCardImage';
 
 export default function CaseStudies() {
   const featured = projectsData.find((p) => p.slug === 'pointnest-saas');
@@ -20,21 +21,14 @@ export default function CaseStudies() {
           <div className="border border-gray-200 dark:border-gray-800 rounded-xl bg-white dark:bg-gray-900 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Visual */}
-              <div
-                className="p-10 lg:p-14 flex items-center justify-center min-h-[300px]"
-                style={{ backgroundColor: featured.color + '08' }}
-              >
-                <div className="text-center">
-                  <div
-                    className="text-6xl font-bold opacity-10 mb-4"
-                    style={{ color: featured.color }}
-                  >
-                    PN
-                  </div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {featured.category}
-                  </p>
-                </div>
+              <div className="relative min-h-[300px] flex items-center justify-center overflow-hidden border-b lg:border-b-0 lg:border-r border-gray-200 dark:border-gray-800">
+                <ProjectCardImage
+                  src={featured.image}
+                  alt={featured.title}
+                  color={featured.color}
+                  title={featured.title}
+                  heightClass="h-full min-h-[300px]"
+                />
               </div>
 
               {/* Content */}

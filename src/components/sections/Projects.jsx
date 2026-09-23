@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink, ArrowRight, Search, X, SearchX } from 'lucide-react';
 import { projectsData } from '../../data/content';
 import { SectionHeading, FadeIn } from '../ui/SectionHeading';
+import ProjectCardImage from '../ui/ProjectCardImage';
 
 const categories = ['All', 'Premium Multipage', 'SaaS', 'React Apps', 'Websites', 'Quick Demo'];
 
@@ -175,37 +176,14 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Colored content area */}
-                <div
-                  className="h-44 flex items-center justify-center relative overflow-hidden"
-                  style={{ backgroundColor: project.color + '08' }}
-                >
-                  {/* Fallback Background */}
-                  <div
-                    className="absolute inset-0 opacity-[0.04]"
-                    style={{
-                      backgroundImage: `radial-gradient(circle at 20% 50%, ${project.color}40 0%, transparent 50%), radial-gradient(circle at 80% 50%, ${project.color}20 0%, transparent 50%)`,
-                    }}
-                  />
-                  <span
-                    className="text-5xl font-bold opacity-10 transition-transform duration-500 group-hover:scale-110"
-                    style={{ color: project.color }}
-                  >
-                    {project.title.split(' ')[0]}
-                  </span>
-
-                  {/* Image Overlay */}
-                  {project.image && (
-                    <img
-                      src={project.image}
-                      alt={`${project.title} thumbnail`}
-                      className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 z-10 bg-white dark:bg-gray-900"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                      }}
-                    />
-                  )}
-                </div>
+                {/* Project Image with Skeleton Loader */}
+                <ProjectCardImage
+                  src={project.image}
+                  alt={project.title}
+                  color={project.color}
+                  title={project.title}
+                  heightClass="h-44"
+                />
 
                 {/* Content */}
                 <div className="p-6">

@@ -7,6 +7,7 @@ import WhyChooseMe from '../components/sections/WhyChooseMe';
 import Testimonials from '../components/sections/Testimonials';
 import { projectsData } from '../data/content';
 import { FadeIn } from '../components/ui/SectionHeading';
+import ProjectCardImage from '../components/ui/ProjectCardImage';
 import { ExternalLink } from 'lucide-react';
 
 export default function HomePage() {
@@ -52,37 +53,14 @@ export default function HomePage() {
             {featured.map((project, index) => (
               <FadeIn key={project.id} delay={index * 0.1} className="h-full">
                 <div className="group border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden bg-white dark:bg-gray-900 hover:border-gray-300 dark:hover:border-gray-700 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-black/40 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
-                  {/* Colored header / Image */}
-                  <div
-                    className="h-36 flex items-center justify-center relative overflow-hidden"
-                    style={{ backgroundColor: project.color + '08' }}
-                  >
-                    {/* Fallback Background */}
-                    <div
-                      className="absolute inset-0 opacity-[0.04]"
-                      style={{
-                        backgroundImage: `radial-gradient(circle at 30% 50%, ${project.color}40 0%, transparent 50%)`,
-                      }}
-                    />
-                    <span
-                      className="text-4xl font-bold opacity-10 transition-transform duration-500 group-hover:scale-110"
-                      style={{ color: project.color }}
-                    >
-                      {project.title.split(' ')[0]}
-                    </span>
-
-                    {/* Image Overlay */}
-                    {project.image && (
-                      <img
-                        src={project.image}
-                        alt={`${project.title} thumbnail`}
-                        className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 z-10 bg-white dark:bg-gray-900"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                        }}
-                      />
-                    )}
-                  </div>
+                  {/* Project Image with Skeleton Loader */}
+                  <ProjectCardImage
+                    src={project.image}
+                    alt={project.title}
+                    color={project.color}
+                    title={project.title}
+                    heightClass="h-40"
+                  />
 
                   {/* Content */}
                   <div className="p-6 flex flex-col flex-1">

@@ -103,3 +103,17 @@ select:focus-visible {
   height: 8px;
   border-radius: 50%;
 }
+
+/* Skeleton shimmer animation */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
