@@ -51,6 +51,43 @@ export const expertiseData = [
 
 export const projectsData = [
   {
+    id: 20,
+    slug: "salman-malik-unisex-salon",
+    keywords: [
+      "salon",
+      "beauty",
+      "hair",
+      "haircut",
+      "styling",
+      "makeup",
+      "bridal",
+      "extensions",
+      "tattoo",
+      "piercing",
+      "nails",
+      "academy",
+      "mumbai",
+      "andheri west",
+      "booking",
+      "unisex salon",
+      "cosmetology",
+    ],
+    title: "Salman Malik Unisex Salon & Academy",
+    category: "Premium Multipage",
+    description:
+      "A high-conversion, editorial multi-page web platform for a premier Mumbai salon and beauty academy featuring interactive service explorations, student showcases, and instant booking workflows.",
+    challenge:
+      "Crafting an anti-generic, mobile-first digital storefront optimized for rapid 4G loading in Andheri West without fabricating unverified claims or sacrificing aesthetic prestige.",
+    solution:
+      "Engineered an editorial layout system with bespoke 390px mobile compositions, sticky action bar, LocalBusiness schema SEO, and React Router multi-page architecture.",
+    techStack: ["React 19", "React Router", "Tailwind CSS", "Vite", "LocalBusiness SEO"],
+    liveUrl: "https://salman-malik-unisex-salon.vercel.app/",
+    githubUrl: "#",
+    color: "#A8431F",
+    image: "/projects/salman-malik-salon.png",
+    featured: true,
+  },
+  {
     id: 10,
     slug: "eg-earth-fitness-gym",
     keywords: ["gym", "fitness", "workout", "yoga", "training", "exercise", "wellness", "health", "sports", "trainer"],
