@@ -51,6 +51,76 @@ export const expertiseData = [
 
 export const projectsData = [
   {
+    id: 22,
+    slug: "invent-fine-art-v4",
+    keywords: [
+      "art",
+      "sculpture",
+      "sculptures",
+      "planters",
+      "grc",
+      "frp",
+      "jali",
+      "facade",
+      "catalogue",
+      "manufacturer",
+      "b2b",
+      "quote",
+      "enquiry",
+      "gallery",
+      "mumbai",
+      "line drawings",
+    ],
+    title: "Invent Fine Art: Sculpture & GRC Catalogue (v4)",
+    category: "Premium Multipage",
+    description:
+      "A catalogue website for a Mumbai maker of sculptures, designer planters, GRC and FRP products: five product lines, 105 numbered designs, project galleries and a quote enquiry with file upload, in an industrial concrete-and-oxide style.",
+    challenge:
+      "Turning an old site with scattered photos into a fast, searchable catalogue that indexes well, where every design keeps a fixed reference code for enquiries and no unverified claim reaches the page.",
+    solution:
+      "Prerendered every page as static HTML with React Router, added self-drawing SVG line-art in the hero and on card hover, a lightbox with ?design= deep links, and an enquiry panel that emails the client through Resend with Turnstile spam protection.",
+    techStack: ["React 19", "React Router (prerendered)", "Tailwind CSS v4", "GSAP", "Lenis", "Resend", "Vercel"],
+    liveUrl: "https://inventfineart-landing-page-v4.vercel.app/",
+    githubUrl: "#",
+    color: "#C24A1C",
+    image: "/projects/invent-fine-art-v4.png",
+    featured: true,
+  },
+  {
+    id: 21,
+    slug: "invent-fine-art-v2",
+    keywords: [
+      "art",
+      "sculpture",
+      "sculptures",
+      "planters",
+      "grc",
+      "frp",
+      "catalogue",
+      "manufacturer",
+      "b2b",
+      "quote",
+      "enquiry",
+      "gallery",
+      "mumbai",
+      "editorial",
+    ],
+    title: "Invent Fine Art: Editorial Catalogue (v2)",
+    category: "Premium Multipage",
+    description:
+      "An editorial version of the Invent Fine Art catalogue, with serif headlines, bronze accents and line-drawing figures for each product line, plus the full design catalogue, project galleries and a quote enquiry.",
+    challenge:
+      "Giving a sculpture and architectural-products maker a gallery-like, premium feel while keeping a large photo catalogue fast and easy to enquire from.",
+    solution:
+      "Built prerendered React Router pages with responsive WebP images, GSAP scroll motion with Lenis smooth scrolling, a lightbox catalogue and a react-hook-form enquiry sent by email.",
+    techStack: ["React 19", "React Router (prerendered)", "Tailwind CSS v4", "GSAP", "Lenis", "Vercel"],
+    liveUrl: "https://inventfineart-landing-page-v2.vercel.app/",
+    githubUrl: "#",
+    color: "#8A6A3F",
+    image: "/projects/invent-fine-art-v2.png",
+    featured: false,
+  },
+  {
     id: 20,
     slug: "salman-malik-unisex-salon",
     keywords: [
